@@ -1,0 +1,164 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+*{
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+
+    display: flex;
+    justify-content: center; 
+
+    background-color: #D9A87E;
+    
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    
+}
+
+main{
+
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 50px;
+    padding: 10px;
+    
+
+    width: 600px;
+    
+
+    border-radius: 20px;
+    background-color: #D93223;
+    
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 34px;
+    color: #F2EDD0;
+
+}
+
+.row{
+
+    display: flex;
+    justify-content: center;
+    width: 550px;
+    height: 50px;
+
+    margin-top: 30px;
+    box-shadow: 0 4px 14px rgba(169, 9, 9, 0.529);
+    
+    border-radius: 25px;
+    
+}
+
+.row input{
+
+    width: 600px;
+    padding: 20px;
+    font-size: 18px; 
+
+    border-radius: 25px;
+    outline: 0;
+    border: 0;
+    
+}
+
+.row input::placeholder{
+    
+    color: #A69D26;
+
+}
+
+.row button{
+
+    width: 94px;
+    height: 50px;
+    position: absolute;
+    left: 62%;
+
+    background-color: #A69D26;
+    border-radius: 0px 25px 25px 0px;
+    border: 0;
+    color: #F2EDD0;
+
+}
+
+.row input::placeholder, .row button{
+
+    font-family:"Inria Sans", sans-serif; 
+    font-size: 20px
+
+}
+
+ul{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+ul li{
+   
+    list-style: none;
+    color: #F2EDD0;
+    font-size: 20px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+
+    padding-left: 50px;
+    
+    
+}
+
+ul li::before{
+
+    content: '';
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    background-image: url(./assets/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    
+
+    left: 0;
+    
+    
+}
+
+ul li.checked{
+    color: #fee3cc;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(assets/checked.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    color: #A69D26;
+    line-break: 40px;
+    text-align: center;
+}
+
+ul li span:hover{
+    background: #f65445;
+    border-radius: 50px;
+}
